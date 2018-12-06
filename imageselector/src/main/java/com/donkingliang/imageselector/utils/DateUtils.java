@@ -12,11 +12,11 @@ public class DateUtils {
         Calendar imageTime = Calendar.getInstance();
         imageTime.setTimeInMillis(time);
         if (sameDay(calendar, imageTime)) {
-            return "今天";
+            return "Today";
         } else if (sameWeek(calendar, imageTime)) {
-            return "本周";
+            return "This week";
         } else if (sameMonth(calendar, imageTime)) {
-            return "本月";
+            return "This month";
         } else {
             Date date = new Date(time);
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM");
